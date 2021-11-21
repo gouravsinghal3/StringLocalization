@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHelloWorld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvSonyLiv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSonyLiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sonyliv"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvHelloWorld"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/english"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnHindi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHelloWorld" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnHindi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hindi"
+        app:layout_constraintBaseline_toBaselineOf="@id/btnEnglish"
+        app:layout_constraintEnd_toStartOf="@+id/btnChinese"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnEnglish"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnChinese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chinese"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnHindi"
+        app:layout_constraintBaseline_toBaselineOf="@id/btnEnglish" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnKJapanese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/japanese"
+        app:layout_constraintEnd_toStartOf="@+id/btnRussian"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEnglish" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRussian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/russian"
+        app:layout_constraintEnd_toStartOf="@+id/btnSpanish"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnKJapanese"
+        app:layout_constraintTop_toBottomOf="@id/btnEnglish" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSpanish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spanish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnRussian"
+        app:layout_constraintTop_toBottomOf="@id/btnEnglish" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
